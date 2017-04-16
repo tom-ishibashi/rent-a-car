@@ -1,6 +1,6 @@
-package rentacar.human;
+package rentacar.consumer;
 
-import rentacar.model.Car;
+import rentacar.car.Car;
 
 import java.util.Scanner;
 

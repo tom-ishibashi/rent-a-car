@@ -1,8 +1,9 @@
 package rentacar;
 
-import rentacar.human.Consumer;
-import rentacar.model.AutoMobile;
-import rentacar.model.Car;
+import rentacar.car.ElectricVehicle;
+import rentacar.consumer.Consumer;
+import rentacar.car.AutoMobile;
+import rentacar.car.Car;
 import rentacar.shop.RentalCarShop;
 
 import java.util.HashMap;
@@ -23,12 +24,14 @@ public class RentACarApplication {
     }
 
     public Map<String, Car> init() {
-        Car autoMobile1 = new AutoMobile("インプレッサ", 60, 8);
-        Car autoMobile2 = new AutoMobile("Fitハイブリッド", 40, 20);
+        Car car1 = new AutoMobile("インプレッサ", 60, 8);
+        Car car2 = new AutoMobile("Fitハイブリッド", 40, 20);
+        Car car3 = new ElectricVehicle("リーフ", 30, 6);
 
         Map<String, Car> carMap = new HashMap<>();
-        carMap.put(autoMobile1.getName(), autoMobile1);
-        carMap.put(autoMobile2.getName(), autoMobile2);
+        carMap.put(car1.getName(), car1);
+        carMap.put(car2.getName(), car2);
+        carMap.put(car3.getName(), car3);
         return carMap;
     }
 }

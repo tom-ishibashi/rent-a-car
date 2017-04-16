@@ -1,4 +1,4 @@
-package rentacar.model;
+package rentacar.car;
 
 /**
  * 車インターフェース

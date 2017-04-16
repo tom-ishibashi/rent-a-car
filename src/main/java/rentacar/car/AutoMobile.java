@@ -1,4 +1,4 @@
-package rentacar.model;
+package rentacar.car;
 
 /**
  * ガソリン車クラス
@@ -8,10 +8,10 @@ public class AutoMobile implements Car {
     // 車名
     private String name;
 
-    // 燃料(L)
+    // 残ガソリン量(L)
     private int fuel;
 
-    // 燃料満タン(L)
+    // ガソリン最大量(L)
     private int maxFuel;
 
     // 燃費(km/L)
@@ -50,8 +50,9 @@ public class AutoMobile implements Car {
         this.fuel += fuel;
     }
 
+    @Override
     public String toString() {
-        return getName() + "/" + getFuel() + "L";
+        return getName() + "/" + getMaxFuel() + "L";
     }
 
     @Override

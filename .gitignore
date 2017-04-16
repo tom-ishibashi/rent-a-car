@@ -12,6 +12,7 @@
 hs_err_pid*
 
 #idea
+target/
 .idea/workspace.xml
 .idea/markdown*
 .idea/uiDesigner*

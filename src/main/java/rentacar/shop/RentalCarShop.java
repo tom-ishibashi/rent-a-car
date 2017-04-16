@@ -1,7 +1,7 @@
 package rentacar.shop;
 
-import rentacar.human.Consumer;
-import rentacar.model.Car;
+import rentacar.consumer.Consumer;
+import rentacar.car.Car;
 
 import java.util.*;
 
